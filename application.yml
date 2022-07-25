@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: python-manifest
-    repoURL: https://github.com/jain-aayush1123/devops-python
+    path: dev
+    repoURL: https://github.com/jain-aayush1123/argocd-app-config
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
