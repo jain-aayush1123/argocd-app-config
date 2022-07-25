@@ -1,6 +1,7 @@
 apiVersion: v1
 name: hello-python
 description: Install a Python HelloWorld deployment
+type: application
 keywords:
   - python
 version: 1.0.0

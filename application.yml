@@ -12,9 +12,9 @@ spec:
     helm:
       valueFiles:
         - values.yaml
-    path: templates
+    chart: hello-python
     repoURL: https://github.com/jain-aayush1123/argocd-app-config
-    targetRevision: HEAD
+    targetRevision: 1.0.0
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
