@@ -4,9 +4,9 @@ metadata:
   labels:
     app: hello-python
   name: hello-python
-  namespace: default
+  namespace: { { .Values.namespace.name } }
 spec:
-  replicas: 3
+  replicas: { { .Values.replicaCount } }
   selector:
     matchLabels:
       app: hello-python
@@ -21,7 +21,7 @@ spec:
         app: hello-python
     spec:
       containers:
-        - image: awsm1123/hello-python:2.0
+        - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           imagePullPolicy: IfNotPresent
           name: hello-python
           resources:

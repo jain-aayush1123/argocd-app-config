@@ -1,0 +1,4 @@
+namespace:
+  name: prod
+
+replicaCount: 5
