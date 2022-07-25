@@ -21,7 +21,7 @@ spec:
         app: hello-python
     spec:
       containers:
-        - image: awsm1123/hello-python:1.1.0
+        - image: awsm1123/hello-python:latest
           imagePullPolicy: IfNotPresent
           name: hello-python
           resources:
